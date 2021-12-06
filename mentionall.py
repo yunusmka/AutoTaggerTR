@@ -34,36 +34,38 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**𝐺𝑒𝑐𝑒 𝐾𝑢𝑠̧𝑢 𝑇𝑎𝑔 Bot**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/help**'i tıklayın.",
+  await event.reply("**AutoTagger🇹🇷**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/bilgi**'i tıklayın.",
                     buttons=(
                       [
-                         Button.url('➕ BENİ GRUBA EKLE ➕ ', 'http://t.me/gece_birdtagbot?startgroup=a')
+                         Button.url('➕ BENİ GRUBA EKLE ➕ ', 'http://t.me/autotagger_bot?startgroup=a')
                       ],
                       [
-                         Button.url('📣 Kanal', 'https://t.me/gece_kusubio'),
-                         Button.url('✨ Developer', 'https://t.me/mutsuz_panda')
+                         Button.url('📣 Kanal', 'https://t.me/HerlockBots'),
+                         Button.url('👮Developer', 'https://t.me/tht_herlock'),
+                         Button.url('🎆 Sahib', 'https://t.me/SakirBey1')
                       ]
                     ),
                     link_preview=False
                    )
-@client.on(events.NewMessage(pattern="^/help$"))
+@client.on(events.NewMessage(pattern="^/bilgi$"))
 async def help(event):
-  helptext = "**𝐺𝑒𝑐𝑒 𝐾𝑢𝑠̧𝑢 𝑇𝑎𝑔 bot'un Yardım Menüsü**\n\nKomut: /all \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. /etag  \n emoji ile etiketleme. \n`Örnek: /all Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyecek."
+  helptext = "**AutoTagger🇹🇷 Bot'un Yardım Menüsü**\n\nKomut: /utag \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. /etag  \n emoji ile etiketleme. \n`Örnek: /utag Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyecek."
   await event.reply(helptext,
                     buttons=(
                       [
-                         Button.url('➕ BENİ GRUBA EKLE ➕', 'http://t.me/gece_birdtagbot?startgroup=a')
+                         Button.url('➕ BENİ GRUBA EKLE ➕', 'http://t.me/autotagger_bot?startgroup=a')
                       ],
-                      [  
-                         Button.url('📣 Kanal', 'https://t.me/gece_kusubio'),
-                         Button.url('✨ Developer', 'https://t.me/mutsuz_panda')
+                      [
+                         Button.url('📣 Kanal', 'https://t.me/HerlockBots'),
+                         Button.url('👮Developer', 'https://t.me/tht_herlock'),
+                         Button.url('🎆 Sahib', 'https://t.me/SakirBey1')
                       ]
                     ),
                     link_preview=False
                    )
 
 
-@client.on(events.NewMessage(pattern="^/all ?(.*)"))
+@client.on(events.NewMessage(pattern="^/utag ?(.*)"))
 async def mentionall(event):
   global anlik_calisan
   if event.is_private:
@@ -242,5 +244,5 @@ async def nick(event):
         usrnum = 0
         usrtxt = ""
 
-print(">> Bot çalıyor merak etme 🚀 @mutsuz_panda bilgi alabilirsin <<")
+print(">> Bot çalıyor merak etme 🚀 @tht_herlock bilgi alabilirsin <<")
 client.run_until_disconnected()
