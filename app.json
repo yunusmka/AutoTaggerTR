@@ -1,7 +1,7 @@
 {
-  "name": "Lounge Tagger Bot",
+  "name": "Auto Tagger Bot",
   "logo":"https://telegra.ph/file/dfa517fd00b6aca5f7ac9.jpg",
-  "description": "Lounge tagger bot sıze ucretsız uyelerınızı etıketleyen bı bottur.",
+  "description": "Auto tagger bot sıze ucretsız uyelerınızı etıketleyen bı bottur.",
   "env": {
     "TOKEN": {
       "description": "bot token girin.",
