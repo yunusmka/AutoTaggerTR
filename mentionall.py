@@ -96,7 +96,7 @@ async def mentionall(event):
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
       usrnum += 1
-      usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
+      usrtxt += f"🧑‍🔧-[{usr.first_name}](tg://user?id={usr.id})\n "
       if event.chat_id not in anlik_calisan:
         await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌")
         return
@@ -114,7 +114,7 @@ async def mentionall(event):
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
       usrnum += 1
-      usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
+      usrtxt += f"🧑‍🔧-[{usr.first_name}](tg://user?id={usr.id})\n "
       if event.chat_id not in anlik_calisan:
         await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌")
         return
@@ -125,7 +125,7 @@ async def mentionall(event):
         usrtxt = ""
 
 # Emoji Modulu (aykhan_s)
-@client.on(events.NewMessage(pattern="^/etag ?(.*)"))
+@client.on(events.NewMessage(pattern="^/itag ?(.*)"))
 async def etag(event):
   global anlik_calisan
   if event.is_private:
@@ -156,7 +156,7 @@ async def etag(event):
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
       usrnum += 1
-      usrtxt += f"[{random.choice(emj)}](tg://user?id={usr.id}) "
+      usrtxt += f"[{random.choice(cumle)}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
         await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌")
         return
@@ -174,7 +174,7 @@ async def etag(event):
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
       usrnum += 1
-      usrtxt += f"[{random.choice(emj)}](tg://user?id={usr.id}) "
+      usrtxt += f"[{random.choice(cumle)}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
         await event.respond("İşlem Başarılı Bir Şekilde Durduruldu ❌")
         return
@@ -185,7 +185,7 @@ async def etag(event):
         usrtxt = ""
 
 #  güzel isimler...!!!
-@client.on(events.NewMessage(pattern="^/nick ?(.*)"))
+@client.on(events.NewMessage(pattern="^/etag ?(.*)"))
 async def nick(event):
   global anlik_calisan
   if event.is_private:
