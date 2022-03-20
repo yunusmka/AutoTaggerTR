@@ -34,31 +34,31 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**AutoTagger🇹🇷**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/bilgi**'i tıklayın.",
+  await event.reply("**XetikeTTagger🇹🇷**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/bilgi**'i tıklayın.",
                     buttons=(
                       [
-                         Button.url('➕ BENİ GRUBA EKLE ➕ ', 'http://t.me/autotagger_bot?startgroup=a')
+                         Button.url('➕ BENİ GRUBA EKLE ➕ ', 'http://t.me/Xtaggeretiket_bot?startgroup=a')
                       ],
                       [
-                         Button.url('📣 Kanal', 'https://t.me/HerlockBots'),
-                         Button.url('👮Developer', 'https://t.me/tht_herlock'),
-                         Button.url('🎆 Sahib', 'https://t.me/SakirBey1')
+                         Button.url('📣 Kanal', 'https://t.me/'taggeretiket),
+                         Button.url('👮Developer', 'https://t.me/alibeyinizz'),
+                         Button.url('🎆 Sahib', 'https://t.me/alibeyinizz')
                       ]
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/bilgi$"))
 async def help(event):
-  helptext = "**AutoTagger🇹🇷 Bot'un Yardım Menüsü**\n\nKomut: /utag \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. /etag  \n emoji ile etiketleme. \n`Örnek: /utag Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyecek."
+  helptext = "**XetikeTTagger🇹🇷 Bot'un Yardım Menüsü**\n\nKomut: /utag \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. /etag  \n emoji ile etiketleme. \n`Örnek: /utag Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyecek."
   await event.reply(helptext,
                     buttons=(
                       [
-                         Button.url('➕ BENİ GRUBA EKLE ➕', 'http://t.me/autotagger_bot?startgroup=a')
+                         Button.url('➕ BENİ GRUBA EKLE ➕', 'http://t.me/Xtaggeretiket_bot?startgroup=a')
                       ],
                       [
-                         Button.url('📣 Kanal', 'https://t.me/HerlockBots'),
-                         Button.url('👮Developer', 'https://t.me/tht_herlock'),
-                         Button.url('🎆 Sahib', 'https://t.me/SakirBey1')
+                         Button.url('📣 Kanal', 'https://t.me/taggeretiket'),
+                         Button.url('👮Developer', 'https://t.me/alibeyinizz'),
+                         Button.url('🎆 Sahib', 'https://t.me/alibeyinizz')
                       ]
                     ),
                     link_preview=False
